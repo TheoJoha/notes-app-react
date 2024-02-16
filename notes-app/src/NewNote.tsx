@@ -7,13 +7,13 @@ type NewNoteProps = {
     availableTags: Tag[]
 }
 
-const NewNote = ({onSubmit, onAddTag, availableTags}: NewNoteProps) => {
-  return (
-    <>
-    <h1 className="mb-5">NewNote</h1>
-    <NoteForm onSubmit={onSubmit} onAddTag={onAddTag} availableTags={availableTags} />
-    </>
-  )
+const NewNote = ({ onSubmit, onAddTag, availableTags }: NewNoteProps) => {
+    return (
+        <>
+            <h1 className="mb-5">NewNote</h1>
+            <NoteForm onSubmit={onSubmit} onAddTag={onAddTag} availableTags={availableTags} />
+        </>
+    )
 }
 
 export default NewNote
